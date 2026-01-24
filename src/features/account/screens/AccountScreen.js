@@ -152,6 +152,12 @@ const AccountScreen = () => {
               testID="online-status-switch"
               onValueChange={(v) => handleToggle('online', v)} 
             />
+            <SettingsLink 
+              label="Safety and Reporting"
+              icon="shield"
+              testID="edit-profile-link"
+              onPress={() => router.push('/safety')}
+            />
             { /* Navigates to Privacy Policy  */}
             <SettingsLink label="Data & Privacy" icon="shield-halved" />
           </View>

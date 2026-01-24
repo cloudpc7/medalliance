@@ -14,6 +14,7 @@ const AppLayout = () => {
             <Stack.Screen name="delete-account" />
             <Stack.Screen name="messaging" />
             <Stack.Screen name="chat" />
+            <Stack.Screen name="safety" />
         </Stack>
     );
 };

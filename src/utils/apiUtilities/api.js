@@ -454,3 +454,19 @@ export const callFetchIncomingRequests = apiHandler({
 
   fallbackMessage: "Unable to load incoming requests. Please try again.",
 });
+
+export const callSendSafetyReport = apiHandler({
+  apiName: 'sendSafetyReport',
+  call: async ({ reportType, message }) => {
+    if(!reportType || !message) throw new Error("Report and message are required");
+    return await getCallable('sendSafetyReport')({ reportType, message});
+  },
+  validate: (result) => {
+    if (!result.data?.success) {
+      throw new Error(result.data?.message || "Failed to send report");
+    }
+
+  },
+  normalize: (result) => result.data,
+  fallbackMessage: "Unable to send report. Please try again.",
+})

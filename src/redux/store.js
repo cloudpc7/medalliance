@@ -29,7 +29,7 @@ import messagingReducer from './slices/messaging.slice';
 import navReducer from './slices/navControl.slice';
 import loadingReducer from './slices/loading.slice';
 import errorReducer from './slices/error.slice';
-
+import safetyReducer from './slices/safety.slice';
 // -----------------------------------------------------------------------------
 // Storage Adapter
 // -----------------------------------------------------------------------------
@@ -79,7 +79,6 @@ const rootPersistConfig = {
 
 const combinedReducer = combineReducers({
   // User Session & Data
-  // We wrap the authReducer here with its specific blacklist config
   auth: persistReducer(authPersistConfig, authReducer), 
   account: accountReducer,
   profile: profileReducer,
@@ -92,7 +91,7 @@ const combinedReducer = combineReducers({
   shop: shopReducer,
   school: schoolReducer,
   messaging: messagingReducer,
-  
+  safety: safetyReducer,
   // Media
   images: imageSliceReducer,
   

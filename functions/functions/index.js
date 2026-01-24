@@ -1354,6 +1354,39 @@ exports.fetchOutgoingRequestsSecure = onCall({ region: PRIMARY_REGION }, async (
     }
 });
 
+exports.sendSafetyReport = onCall({ region: PRIMARY_REGION }, async (request) => {
+    const uid = request.auth?.uid;
+    const { reportType, message } = request.data || {};
+
+    if (!uid) {
+        logger.warn("sendSafetyReport: Unauthorized attempt");
+        throw new HttpsError('unauthenticated', 'Sign-in required.');
+    }
+
+    if (!reportType || !message) {
+        throw new HttpsError('invalid-argument', 'Report type and message are required');
+    }
+
+    try {
+        const reportDoc = {
+            reportType,
+            message,
+            date: admin.firestore.FieldValue.serverTimestamp(),
+            status: 'new',
+            resolvedBy: " ",
+            resolvedDate: " ",
+        };
+        
+        await admin.firestore().collection('safety_reports').add(reportDoc);
+
+        return { success: true, message: 'Report submitted' };
+    } catch (error) {
+        logger.error('sendSafetyReport failed', { uid, reportType, error });
+        throw new HttpsError('internal', 'Failed to submit report');
+    }
+});
+
+
 // ----------------------------------------------------------------------
 // 15. DEBUG HANDLERS
 // ----------------------------------------------------------------------
