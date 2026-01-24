@@ -1,29 +1,81 @@
 {
   "expo": {
-    "name": "medalliance",
+    "name": "Med Alliance",
     "slug": "medalliance",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/play_store_512.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splashscreen2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.clouddropdesigns.medalliance",
+      "buildNumber": "1",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/play_store_512.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.clouddropdesigns.medalliance",
+      "versionCode": 31,
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-dev-client",
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Med Alliance access to photos?"
+        }
+      ],
+      "expo-font",
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.1.0",
+            "extraProguardRules": "-keepattributes *Annotation*\n-keepattributes Signature\n-keep class com.google.firebase.** { *; }\n-dontwarn com.google.firebase.**\n-keep class com.google.android.gms.** { *; }\n-dontwarn com.google.android.gms.**",
+            "resourcePaths": {
+              "mipmap-mdpi": "./icons/android/res/mipmap-mdpi",
+              "mipmap-hdpi": "./icons/android/res/mipmap-hdpi",
+              "mipmap-xhdpi": "./icons/android/res/mipmap-xhdpi",
+              "mipmap-xxhdpi": "./icons/android/res/mipmap-xxhdpi",
+              "mipmap-xxxhdpi": "./icons/android/res/mipmap-xxxhdpi"
+            }
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "87a29e17-e9e2-46db-868c-086b1cc99497"
+      },
+      "router": {}
+    },
+    "owner": "cloudpc7s-organization"
   }
 }

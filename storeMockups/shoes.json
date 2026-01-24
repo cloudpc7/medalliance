@@ -1,0 +1,78 @@
+{
+  "storeId": "shoes",
+  "storeName": "Comfort Footwear Co.",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../comfortshoes.png",
+  "favorites": [],
+  "items": [
+    {
+      "id": "SH01",
+      "name": "Dansko Professional Clog",
+      "details": "Black Box Leather. Slip-resistant. Wide range of sizes.",
+      "price": 135.00,
+      "imageURL": "https://example.com/dansko.jpg"
+    },
+    {
+      "id": "SH02",
+      "name": "Crocs Specialist II Vent Clog",
+      "details": "Closed-toe design, enhanced arch support. Navy blue.",
+      "price": 45.99,
+      "imageURL": "https://example.com/crocs_spec.jpg"
+    },
+    {
+      "id": "SH03",
+      "name": "New Balance 806 V1 Work Shoe",
+      "details": "Slip-resistant rubber outsole. Leather upper.",
+      "price": 99.99,
+      "imageURL": "https://example.com/nb_work.jpg"
+    },
+    {
+      "id": "SH04",
+      "name": "Brooks Ghost 15 Running Shoe",
+      "details": "Neutral cushion, popular for long shifts. White/Grey.",
+      "price": 140.00,
+      "imageURL": "https://example.com/brooks_ghost.jpg"
+    },
+    {
+      "id": "SH05",
+      "name": "Bates Men's High Gloss Uniform Oxford",
+      "details": "Professional dress shoe for formal duties.",
+      "price": 85.00,
+      "imageURL": "https://example.com/bates_oxford.jpg"
+    },
+    {
+      "id": "SH06",
+      "name": "Skechers Work: Squad SR",
+      "details": "Memory Foam comfort sole. Slip-resistant, non-marking.",
+      "price": 65.00,
+      "imageURL": "https://example.com/skechers_squad.jpg"
+    },
+    {
+      "id": "SH07",
+      "name": "Hoka Bondi SR",
+      "details": "Maximum cushion, water-resistant leather.",
+      "price": 175.00,
+      "imageURL": "https://example.com/hoka_bondi.jpg"
+    },
+    {
+      "id": "SH08",
+      "name": "Clove Classic Clog",
+      "details": "Fluid-resistant, easy to clean. Various colors.",
+      "price": 129.00,
+      "imageURL": "https://example.com/clove_clog.jpg"
+    },
+    {
+      "id": "SH09",
+      "name": "Birkenstock Super Birki Clog",
+      "details": "Waterproof, oil/grease resistant. Removable footbed.",
+      "price": 80.00,
+      "imageURL": "https://example.com/birkenstock_super.jpg"
+    },
+    {
+      "id": "SH10",
+      "name": "ASICS GEL-Venture 8",
+      "details": "Durable, supportive shoe for all-day wear.",
+      "price": 75.00,
+      "imageURL": "https://example.com/asics_gel.jpg"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "storeId": "medical-supplies",
+  "storeName": "Pro-Med Supplies",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../promed.png",
+  "favorites": [],
+  "items": [
+    {
+      "id": "MS01",
+      "name": "Littmann Classic III Stethoscope",
+      "details": "Available in Black, Navy, and Raspberry.",
+      "price": 119.99,
+      "imageURL": "https://example.com/littmann3.jpg"
+    },
+    {
+      "id": "MS02",
+      "name": "Welch Allyn Diagnostic Set",
+      "details": "Ophthalmoscope and Otoscope kit. Rechargeable.",
+      "price": 450.00,
+      "imageURL": "https://example.com/welchall.jpg"
+    },
+    {
+      "id": "MS03",
+      "name": "High-Density Lanyard for ID Badge",
+      "details": "With safety breakaway feature. 5 colors.",
+      "price": 5.99,
+      "imageURL": "https://example.com/lanyard.jpg"
+    },
+    {
+      "id": "MS04",
+      "name": "Sphygmomanometer (Blood Pressure Cuff)",
+      "details": "Aneroid model with D-ring cuff. Adult size.",
+      "price": 35.50,
+      "imageURL": "https://example.com/sphygmo.jpg"
+    },
+    {
+      "id": "MS05",
+      "name": "Penlight with Pupil Gauge",
+      "details": "Disposable, 6-pack. Essential for neurological exams.",
+      "price": 12.75,
+      "imageURL": "https://example.com/penlight.jpg"
+    },
+    {
+      "id": "MS06",
+      "name": "Tuning Fork Set (C-128 and C-512)",
+      "details": "Aluminum alloy. For hearing and vibration sense testing.",
+      "price": 28.00,
+      "imageURL": "https://example.com/tuningfork.jpg"
+    },
+    {
+      "id": "MS07",
+      "name": "Trauma Shears (7.25 inch)",
+      "details": "Stainless steel blades. Black only.",
+      "price": 9.99,
+      "imageURL": "https://example.com/shears.jpg"
+    },
+    {
+      "id": "MS08",
+      "name": "Personal Protective Equipment (PPE) Kit",
+      "details": "Includes 10 masks, gloves, and 2 face shields.",
+      "price": 19.50,
+      "imageURL": "https://example.com/ppekit.jpg"
+    },
+    {
+      "id": "MS09",
+      "name": "Medical Dictionary - Pocket Edition",
+      "details": "Quick reference guide for rounds.",
+      "price": 15.00,
+      "imageURL": "https://example.com/pocketdict.jpg"
+    },
+    {
+      "id": "MS10",
+      "name": "Reflex Hammer (Taylor Style)",
+      "details": "Triangular head, chrome plated handle.",
+      "price": 18.99,
+      "imageURL": "https://example.com/reflexhammer.jpg"
+    }
+  ]
+}

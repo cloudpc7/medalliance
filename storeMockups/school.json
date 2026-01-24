@@ -1,0 +1,78 @@
+{
+  "storeId": "school-supplies",
+  "storeName": "The Campus Supply Depot",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../supplies.png",
+  "favorites": [],
+  "items": [
+    {
+      "id": "SS01",
+      "name": "3-Ring Binder (1 inch)",
+      "details": "Heavy-duty plastic, black. Perfect for lecture notes.",
+      "price": 4.50,
+      "imageURL": "https://example.com/binder.jpg"
+    },
+    {
+      "id": "SS02",
+      "name": "Highlighters - Assorted Colors (6-pack)",
+      "details": "Smear-proof ink. For Kaplan and First Aid.",
+      "price": 6.99,
+      "imageURL": "https://example.com/highlighters.jpg"
+    },
+    {
+      "id": "SS03",
+      "name": "Index Cards (3x5 inch, Ruled)",
+      "details": "100 count. Great for flashcards.",
+      "price": 2.50,
+      "imageURL": "https://example.com/indexcards.jpg"
+    },
+    {
+      "id": "SS04",
+      "name": "Graph Paper Notebook",
+      "details": "8.5x11 inch, 100 sheets. For lab work and diagrams.",
+      "price": 5.99,
+      "imageURL": "https://example.com/graphpaper.jpg"
+    },
+    {
+      "id": "SS05",
+      "name": "Blue/Black Gel Pen Set",
+      "details": "Smooth writing, fine point (0.7mm). 12 pens.",
+      "price": 11.00,
+      "imageURL": "https://example.com/gelpens.jpg"
+    },
+    {
+      "id": "SS06",
+      "name": "Post-it Notes (3x3 inch)",
+      "details": "5 color pack. For quick textbook annotations.",
+      "price": 7.50,
+      "imageURL": "https://example.com/postit.jpg"
+    },
+    {
+      "id": "SS07",
+      "name": "Scientific Calculator (Texas Instruments TI-30X)",
+      "details": "Approved for most basic science courses.",
+      "price": 18.99,
+      "imageURL": "https://example.com/calculator.jpg"
+    },
+    {
+      "id": "SS08",
+      "name": "External SSD Drive (500GB)",
+      "details": "For backing up lecture recordings and notes.",
+      "price": 55.00,
+      "imageURL": "https://example.com/ssd.jpg"
+    },
+    {
+      "id": "SS09",
+      "name": "Erasable Whiteboard Markers (4-pack)",
+      "details": "Low odor, chisel tip. For study group whiteboards.",
+      "price": 8.00,
+      "imageURL": "https://example.com/markers.jpg"
+    },
+    {
+      "id": "SS10",
+      "name": "Laptop Privacy Screen Filter (15.6 inch)",
+      "details": "Limits viewing angle. Essential for studying in public.",
+      "price": 29.99,
+      "imageURL": "https://example.com/privacyfilter.jpg"
+    }
+  ]
+}

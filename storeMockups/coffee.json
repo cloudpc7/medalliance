@@ -1,0 +1,78 @@
+{
+  "storeId": "coffee",
+  "storeName": "Coffee Zone",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../coffee-zone.jpg",
+  "favorites": [],
+  "items": [
+    {
+      "id": "SBC01",
+      "name": "Starbucks - Main Campus",
+      "details": "Located in the Student Union, 1st floor.",
+      "price": 4.50,
+      "imageURL": "https://example.com/sb_main.jpg"
+    },
+    {
+      "id": "SBC02",
+      "name": "Starbucks - Hospital Entrance",
+      "details": "Inside the hospital main lobby, near the gift shop.",
+      "price": 4.50,
+      "imageURL": "https://example.com/sb_hosp.jpg"
+    },
+    {
+      "id": "DNC03",
+      "name": "Dunkin' - North Dorms",
+      "details": "Drive-thru location near North Residence Halls.",
+      "price": 3.00,
+      "imageURL": "https://example.com/dunkin_north.jpg"
+    },
+    {
+      "id": "DNC04",
+      "name": "Dunkin' - Downtown",
+      "details": "10-minute walk from campus.",
+      "price": 3.00,
+      "imageURL": "https://example.com/dunkin_dt.jpg"
+    },
+    {
+      "id": "PKC05",
+      "name": "Peet's Coffee - Med School Annex",
+      "details": "Quiet cafe on the ground floor of the Medical Annex.",
+      "price": 5.00,
+      "imageURL": "https://example.com/peets_med.jpg"
+    },
+    {
+      "id": "PKC06",
+      "name": "Peet's Coffee - Research Park",
+      "details": "Located in the Research Park food court.",
+      "price": 5.00,
+      "imageURL": "https://example.com/peets_research.jpg"
+    },
+    {
+      "id": "JVC07",
+      "name": "Jittery Joe's - Student Center",
+      "details": "Popular local spot with outdoor seating.",
+      "price": 4.00,
+      "imageURL": "https://example.com/jj_sc.jpg"
+    },
+    {
+      "id": "JVC08",
+      "name": "Jittery Joe's - South Gate",
+      "details": "Closest location to the South Campus entrance.",
+      "price": 4.00,
+      "imageURL": "https://example.com/jj_south.jpg"
+    },
+    {
+      "id": "BLC09",
+      "name": "Blue Bottle Coffee - West Side",
+      "details": "Gourmet coffee shop 15 mins away by bus.",
+      "price": 6.00,
+      "imageURL": "https://example.com/bb_west.jpg"
+    },
+    {
+      "id": "BLC10",
+      "name": "Blue Bottle Coffee - Central Square",
+      "details": "Premium quality in the main city square.",
+      "price": 6.00,
+      "imageURL": "https://example.com/bb_central.jpg"
+    }
+  ]
+}

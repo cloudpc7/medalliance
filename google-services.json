@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "506970639988",
+    "project_id": "medalliance-1",
+    "storage_bucket": "medalliance-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506970639988:android:dbadc4dcd16b61ecfc8b21",
+        "android_client_info": {
+          "package_name": "com.clouddropdesigns.medalliance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506970639988-eb8mlmf462ue91ial1ugbihjn1b4lv9t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clouddropdesigns.medalliance",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "506970639988-k0nb5it3ji3sro24ev1n1um073ldrd03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clouddropdesigns.medalliance",
+            "certificate_hash": "96415964e633e4b0aacdd7679a466646e2abd334"
+          }
+        },
+        {
+          "client_id": "506970639988-drq8m2ch9m2ob0bhttj3bfa8me24r463.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5JIsoyMX1jhpyeMUPl6rN71ehwRg-pko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506970639988-drq8m2ch9m2ob0bhttj3bfa8me24r463.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506970639988-cehnctb3ee8l3oib8hb1ib11f2bps851.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clouddropdesigns.medalliance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

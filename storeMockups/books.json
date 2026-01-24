@@ -1,0 +1,107 @@
+{
+  "storeId": "books",
+  "storeName": "The Medical Campus Library",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../medical-books.png",
+  "favorites": [
+    {
+      "id": "199403049",
+      "name": "Harrison's Principles of Internal Medicine",
+      "details": "By Dennis Kasper et al.",
+      "price": 180.00,
+      "imageURL": "https://example.com/harrisons.jpg",
+      "ISBN": "199403049"
+    }
+  ],
+  "items": [
+    {
+      "id": "0323393708",
+      "name": "Gray's Anatomy for Students",
+      "details": "By Richard Drake et al.",
+      "price": 75.99,
+      "imageURL": "https://example.com/grays.jpg",
+      "year": 2020,
+      "ISBN": "0323393708"
+    },
+    {
+      "id": "1455776662",
+      "name": "Netter's Atlas of Human Anatomy",
+      "details": "By Frank H. Netter",
+      "price": 88.50,
+      "imageURL": "https://example.com/netter.jpg",
+      "year": 2018,
+      "ISBN": "1455776662"
+    },
+    {
+      "id": "0323676228",
+      "name": "Guyton and Hall Textbook of Medical Physiology",
+      "details": "By John E. Hall",
+      "price": 135.00,
+      "imageURL": "https://example.com/guyton.jpg",
+      "year": 2021,
+      "ISBN": "0323676228"
+    },
+    {
+      "id": "0323636592",
+      "name": "Robbins and Cotran Pathologic Basis of Disease",
+      "details": "By Vinay Kumar et al.",
+      "price": 112.99,
+      "imageURL": "https://example.com/robbins.jpg",
+      "year": 2022,
+      "ISBN": "0323636592"
+    },
+    {
+      "id": "1259642055",
+      "name": "Lippincott's Illustrated Reviews: Biochemistry",
+      "details": "By Pamela C. Champe",
+      "price": 55.00,
+      "imageURL": "https://example.com/lippincott.jpg",
+      "year": 2019,
+      "ISBN": "1259642055"
+    },
+    {
+      "id": "9780323759322",
+      "name": "Medical Microbiology (Jawetz, Melnick & Adelberg's)",
+      "details": "By Stephen A. Morse et al.",
+      "price": 68.75,
+      "imageURL": "https://example.com/jawetz.jpg",
+      "year": 2023,
+      "ISBN": "9780323759322"
+    },
+    {
+      "id": "1260461877",
+      "name": "First Aid for the USMLE Step 1 2024",
+      "details": "By Tao Le and Vikas Bhushan",
+      "price": 52.00,
+      "imageURL": "https://example.com/firstaid.jpg",
+      "year": 2024,
+      "ISBN": "1260461877"
+    },
+    {
+      "id": "0323547864",
+      "name": "Katzung & Trevor's Basic & Clinical Pharmacology",
+      "details": "By Anthony J. Trevor et al.",
+      "price": 95.50,
+      "imageURL": "https://example.com/katzung.jpg",
+      "year": 2020,
+      "ISBN": "0323547864"
+    },
+    {
+      "id": "0134423456",
+      "name": "Kaplan Medical USMLE Step 1 Qbook",
+      "details": "By Kaplan",
+      "price": 45.99,
+      "imageURL": "https://example.com/kaplan.jpg",
+      "year": 2023,
+      "ISBN": "0134423456"
+    },
+    {
+      "id": "0131468203",
+      "name": "The DSM-5® Diagnostic and Statistical Manual",
+      "details": "By American Psychiatric Association",
+      "price": 170.00,
+      "imageURL": "https://example.com/dsm5.jpg",
+      "year": 2013,
+      "ISBN": "0131468203"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "storeId": "scrubs",
+  "storeName": "Scrubs & Beyond",
+  "storeImageURL": "https://firebasestorage.googleapis.com/v0/b/.../scrubs-beyond.png",
+  "favorites": [],
+  "items": [
+    {
+      "id": "SC01",
+      "name": "Cherokee Workwear V-Neck Top",
+      "details": "Classic fit, polyester/cotton blend. All colors.",
+      "price": 24.99,
+      "imageURL": "https://example.com/cherokee_top.jpg"
+    },
+    {
+      "id": "SC02",
+      "name": "Cherokee Workwear Drawstring Pant",
+      "details": "Tapered leg, multiple pockets. All colors.",
+      "price": 26.50,
+      "imageURL": "https://example.com/cherokee_pant.jpg"
+    },
+    {
+      "id": "SC03",
+      "name": "Figs Casma Three-Pocket Scrub Top",
+      "details": "Modern fit, FIONx fabric. Available in Navy and Black.",
+      "price": 48.00,
+      "imageURL": "https://example.com/figs_top.jpg"
+    },
+    {
+      "id": "SC04",
+      "name": "Figs Yola High Waisted Scrub Pants",
+      "details": "Four-way stretch, reinforced seams. Available in Charcoal.",
+      "price": 58.00,
+      "imageURL": "https://example.com/figs_pant.jpg"
+    },
+    {
+      "id": "SC05",
+      "name": "Grey's Anatomy Spandex Stretch Top",
+      "details": "Ultra-soft, moisture-wicking fabric. Pewter only.",
+      "price": 38.99,
+      "imageURL": "https://example.com/greys_top.jpg"
+    },
+    {
+      "id": "SC06",
+      "name": "Grey's Anatomy Spandex Jogger Pant",
+      "details": "Elastic cuff, drawcord waist. Hunter Green only.",
+      "price": 42.50,
+      "imageURL": "https://example.com/greys_jogger.jpg"
+    },
+    {
+      "id": "SC07",
+      "name": "Lab Coat - Mid-Length",
+      "details": "35-inch poly/cotton coat. Embroidery service available.",
+      "price": 55.00,
+      "imageURL": "https://example.com/labcoat_mid.jpg"
+    },
+    {
+      "id": "SC08",
+      "name": "Lab Coat - Short (Consultation)",
+      "details": "29-inch coat. Perfect for clinical rotations.",
+      "price": 45.00,
+      "imageURL": "https://example.com/labcoat_short.jpg"
+    },
+    {
+      "id": "SC09",
+      "name": "Compression Socks (3-pack)",
+      "details": "15-20 mmHg gradient. Assorted colors/patterns.",
+      "price": 29.99,
+      "imageURL": "https://example.com/socks.jpg"
+    },
+    {
+      "id": "SC10",
+      "name": "Scrub Cap - Tie Back",
+      "details": "Cotton fabric. Various prints and solids.",
+      "price": 12.00,
+      "imageURL": "https://example.com/scrubcap.jpg"
+    }
+  ]
+}
