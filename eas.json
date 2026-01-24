@@ -38,7 +38,7 @@
   "submit": {
     "production": {
       "android": {
-        "serviceAccountKeyPath": "./credentials/medalliance-1-58178473f989.json",
+        "serviceAccountKeyPath": "./credentials/medalliance-1-d69386c7b194.json",
         "track":"internal"
       }
     },
