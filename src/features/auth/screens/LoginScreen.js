@@ -1,16 +1,18 @@
 // 🔥 Production Ready
 // --- React Core Libraries and Modules ---
 import React, { useEffect } from 'react';
-import { StyleSheet, ImageBackground, View, Text, TextInput, Pressable } from 'react-native';
+import { StyleSheet, ImageBackground, View, Text, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 // --- Redux State Management ---
 import { useSelector, useDispatch } from 'react-redux';
 import { setSignIn } from '../../../redux/slices/auth.slice';
 import { clearError } from '../../../redux/slices/error.slice';
+
 // --- Custom UI Components ---
 import GoogleSignIn from '../ui/GoogleSignInButton';
 import GoogleSignUp from '../ui/GoogleSignUpButton';
+import AppleSignIn from '../ui/AppleSignInButton';
 import ErrorBanner from '../../../utils/errors/ErrorBanner';
 import LinkComponent from '../../../ui/common/LinkingComponent';
 import Eula from '../ui/Eula';
@@ -76,7 +78,10 @@ const LoginScreen = () => {
           </View>
           <View style={styles.buttonContainer}>
             { isReturning && (
+              <>
               <GoogleSignIn />
+              <AppleSignIn />
+              </>
             )}
             {
               !isReturning && (

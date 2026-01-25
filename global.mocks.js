@@ -30,16 +30,9 @@ jest.mock('./src/ui/common/ErrorBoundary', () => {
 });
 
 // Mock Hooks
-jest.mock('./src/features/auth/utils/router', () => ({
-  useAuthRouter: jest.fn(),
-}));
 
 jest.mock('./src/utils/fontsandicons/Fonts', () => ({
   useAppFonts: jest.fn(),
-}));
-
-jest.mock('./src/features/auth/utils/guards', () => ({
-  isUserAllowed: jest.fn(() => true),
 }));
 
 // Mock Redux Slices

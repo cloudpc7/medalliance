@@ -32,7 +32,6 @@ const GoogleSignIn = () => {
       await dispatch(signInWithGoogle()).unwrap();
     } catch (error) {
       if (error?.includes('canceled')) return;
-      Toast.show({ type: 'error', text1: 'Sign-In Failed', text2: error });
     } finally {
       dispatch(stopLoading()); 
     }

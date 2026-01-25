@@ -35,7 +35,6 @@ const GoogleSignUp = () => {
       
     } catch (error) {
       if (error?.includes('canceled')) return;
-      Toast.show({ type: 'error', text1: 'Sign-In Failed', text2: error });
     } finally {
       dispatch(stopLoading());
       dispatch(setChecked(false));

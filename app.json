@@ -13,6 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "usesAppleSignIn": true,
       "supportsTablet": true,
       "bundleIdentifier": "com.clouddropdesigns.medalliance",
       "buildNumber": "1",
@@ -40,6 +41,7 @@
     },
     "plugins": [
       "expo-dev-client",
+      "expo-apple-authentication",
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
       [
@@ -53,6 +55,9 @@
       [
         "expo-build-properties",
         {
+          "ios": {
+            "useFrameworks": "static"
+          },
           "android": {
             "kotlinVersion": "2.1.0",
             "extraProguardRules": "-keepattributes *Annotation*\n-keepattributes Signature\n-keep class com.google.firebase.** { *; }\n-dontwarn com.google.firebase.**\n-keep class com.google.android.gms.** { *; }\n-dontwarn com.google.android.gms.**",
