@@ -123,7 +123,7 @@ exports.uploadAvatarSecure = onCall({ region: PRIMARY_REGION }, async (request) 
 
   const uid = request.auth.uid;
   const buffer = Buffer.from(imageBase64, 'base64');
-  const fileName = `avatars/${uid}_${Date.now()}.jpg`;
+  const fileName = `users/${uid}/profile_avatar.jpg`;
   const file = admin.storage().bucket().file(fileName);
 
   try {
@@ -145,7 +145,7 @@ exports.uploadAvatarSecure = onCall({ region: PRIMARY_REGION }, async (request) 
 // ----------------------------------------------------------------------
 // FETCH PROFILES (SECURE)
 // ----------------------------------------------------------------------
-exports.fetchProfilesSecure = onCall({ region: PRIMARY_REGION }, async (request) => {
+exports.fetchProfilesSecure = onCall({ region: PRIMARY_REGION, memory: '512MiB' }, async (request) => {
   if (!request.auth) throw new HttpsError('unauthenticated', 'Authentication required.');
 
   try {
@@ -153,7 +153,6 @@ exports.fetchProfilesSecure = onCall({ region: PRIMARY_REGION }, async (request)
     const profiles = snapshot.docs
       .map(doc => {
         const d = doc.data();
-        if (!d.avatarUrl || !d.name) return null;
         return {
           id: doc.id,
           createdAt: new Date().toISOString(),

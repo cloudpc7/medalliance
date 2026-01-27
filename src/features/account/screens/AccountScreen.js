@@ -155,7 +155,7 @@ const AccountScreen = () => {
             <SettingsLink 
               label="Safety and Reporting"
               icon="shield"
-              testID="edit-profile-link"
+              testID="safety-link"
               onPress={() => router.push('/safety')}
             />
             { /* Navigates to Privacy Policy  */}

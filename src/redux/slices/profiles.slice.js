@@ -94,17 +94,21 @@ export const profileFilter = createSelector(
     };
 
     return profiles.filter((profile) => {
+      // 1. Mandatory Guards
       if (profile.profileVisible === false) return false;
-      const profileId = profile.id;
-      if (profileId === currentUid) return false;
+      if (profile.id === currentUid) return false;
+
       const filterKeys = Object.keys(filterState);
 
       for (const key of filterKeys) {
         const userValue = filterState[key];
-        if (userValue === 'any' || ['openFilter', 'selectedFilter', 'showOption', 'hideFilter', 'clear'].includes(key)) {
+
+        // 2. Skip empty filters or UI-only state keys
+        if (!userValue || userValue === 'any' || ['openFilter', 'selectedFilter', 'showOption', 'hideFilter', 'clear'].includes(key)) {
           continue;
         }
 
+        // 3. Special Case: Quote
         if (key === 'quote') {
           if (userValue === 'has quote') {
             const hasQuote = typeof profile.quote === 'string' && profile.quote.trim().length > 0;
@@ -113,19 +117,33 @@ export const profileFilter = createSelector(
           continue;
         }
 
+        // 4. Special Case: Online Status
         if (key === 'onlineStatus') {
           const shouldBeOnline = userValue === 'online';
           if (profile.online !== shouldBeOnline) return false;
           continue;
         }
 
-        const profileFieldName = keyMap[key] || key;
+        // 5. CRITICAL FIX: Only filter if the key is in our mapping
+        // This ensures 'avatarUrl' or other extra fields don't accidentally hide the user
+        const profileFieldName = keyMap[key];
+        if (!profileFieldName) {
+          continue; // Ignore any filter key that isn't explicitly mapped
+        }
+
         const profileValue = profile[profileFieldName];
-        if (!profileValue) return false;
+
+        // 6. If the profile is missing a value but the user is SEARCHING for one
+        if (profileValue === undefined || profileValue === null || profileValue === '') {
+            // Only hide if the user selected a specific value to search for
+            if (userValue && userValue !== 'any') return false;
+            continue;
+        }
 
         const pValClean = profileValue.toString().toLowerCase();
         const uValClean = userValue.toLowerCase();
 
+        // 7. Comparison Logic
         if (['program', 'degree', 'format'].includes(key)) {
           if (!pValClean.includes(uValClean)) return false;
         } else {
@@ -136,7 +154,6 @@ export const profileFilter = createSelector(
     });
   }
 );
-
 export const selectCurrentUserProfile = (state) => {
   const uid = state.auth.user?.uid;
   if (!uid) return null;

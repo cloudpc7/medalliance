@@ -1,5 +1,3 @@
-// src/ui/common/SettingsLink.test.js
-
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import SettingsLink from './SettingsLink';

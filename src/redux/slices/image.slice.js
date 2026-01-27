@@ -21,7 +21,7 @@ import { updateProfileField } from './profile.slice';
  */
 export const processAndCacheImage = createAsyncThunk(
   'images/processAndCacheImage',
-  async (input, { getState, rejectWithValue }) => {
+  async (input, { getState }) => {
     let remoteUri = typeof input === 'string' ? input : input?.remoteUri;
     let resizeOptions = input?.resizeOptions || {};
 
@@ -89,7 +89,7 @@ export const processAndCacheImage = createAsyncThunk(
         originalDimensions: originalSize,
       };
     } catch (error) {
-      return rejectWithValue({ originalUri: remoteUri, error: error.message });
+      return null;
     }
   }
 );
@@ -106,7 +106,6 @@ export const fetchAvatarUrl = createAsyncThunk(
     if (!uid) return null; 
 
     try {
-      // 2. Production Wait: Wait for Firebase Auth to initialize properly
       const currentUser = await new Promise((resolve, reject) => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
           unsubscribe();

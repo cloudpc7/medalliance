@@ -108,6 +108,9 @@ const DeleteAccountScreen = () => {
               ]}
               onPress={handleDelete}
               disabled={isDeleting}
+              testID="confirm-delete-button"
+              accessibilityRole="button"
+              accessibilityLabel="Permanently delete account"
             >
               <Text style={styles.deleteButtonText}>
                 {isDeleting ? 'Deleting...' : 'Delete account'}
@@ -121,6 +124,9 @@ const DeleteAccountScreen = () => {
                 pressed && styles.secondaryButtonPressed,
               ]}
               disabled={isDeleting}
+              testID="cancel-delete-button"
+              accessibilityRole="button"
+              accessibilityLabel="Cancel and keep account"
             >
               <Text style={styles.secondaryText}>Keep my account</Text>
             </Pressable>

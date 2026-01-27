@@ -22,7 +22,16 @@ const errorSlice = createSlice({
       .addMatcher(
         (action) => action.type.endsWith('/rejected'),
         (state, action) => {
-          const errorMessage = action.payload || action.error?.message || 'An unexpected error occurred.';
+          let errorMessage = 'An unexpected error occurred.';
+
+          if (typeof action.payload === 'string') {
+            errorMessage = action.payload;
+          } else if (action.payload && typeof action.payload === 'object' && action.payload.error) {
+            errorMessage = action.payload.error;
+          } else if (action.error?.message) {
+            errorMessage = action.error.message;
+          }
+
           if (errorMessage === 'User cancelled sign-in.' || errorMessage === 'canceled') {
             return;
           }

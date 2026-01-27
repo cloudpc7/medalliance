@@ -1,23 +1,29 @@
 // 🔥 Production Ready
+// --- React Core Libraries and Modules ---
 import React, { useCallback, memo, useRef, useMemo } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Swiper from 'react-native-deck-swiper';
+
+// --- Expo Libraries and Modules ---
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+// --- Redux State Management ---
 import { useDispatch, useSelector } from 'react-redux';
 import { openProfile, setProfileIndex, swipeProfile, previousProfile,selectedProfiles, selectedProfileIds, selectCurrentProfileId  } from '../../../redux/slices/profiles.slice';
+
+// --- Custom UI Components ---
 import ProfileCard from './ProfileCard';
 
 const ProfileSwipe = () => {
   const dispatch = useDispatch();
   const swiperRef = useRef(null);
-
   const profiles = useSelector(selectedProfiles); 
   const visibleIds = useSelector(selectedProfileIds); 
   const currentProfileId = useSelector(selectCurrentProfileId);
   const currentIndex = useMemo(
-  () => visibleIds.indexOf(currentProfileId),
-  [visibleIds, currentProfileId]
-);
+    () => visibleIds.indexOf(currentProfileId),
+    [visibleIds, currentProfileId]
+  );
 
   // --- Swipe Handlers ---
   const handleSwipedLeft = useCallback(() => {

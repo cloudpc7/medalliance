@@ -3,6 +3,9 @@
 import React, { memo, useMemo } from 'react';
 import { ImageBackground, StyleSheet, useWindowDimensions, Text, View } from 'react-native';
 
+// --- Assets ---
+const defaultAvatar = require('../../../../assets/medAllianceIcon3.png');
+
 /**
  * ProfileCard
  * * The main visual card displayed in the swipe deck on the MatchingScreen.
@@ -23,11 +26,19 @@ const ProfileCard = ({ profile, imageUri }) => {
   const { id, name, accountType, major_minor, profession, College, degree, department, occupation } = profile;
   const safeName = name || 'Unknown';
   const isProfessor = accountType === 'professor';
-  const hasImage = typeof imageUri === 'string' && imageUri.trim().length > 0;
   
-  const imageSource = useMemo(() => 
-    hasImage ? { uri: imageUri } : null, 
-    [hasImage, imageUri]);
+  const fallback = useMemo(() => {
+    return !(typeof imageUri === 'string' && imageUri.trim().length > 0);
+  }, [imageUri]);
+
+  const imageSource = useMemo(() => {
+    if (typeof imageUri === 'string' && imageUri.trim().length > 0) {
+      return { uri: imageUri };
+    }
+    return defaultAvatar;
+  }, [imageUri]);
+
+  const hasImage = true;
 
   const a11ySummary = useMemo(() => {
     return isProfessor
@@ -36,14 +47,14 @@ const ProfileCard = ({ profile, imageUri }) => {
   }, [isProfessor, safeName, department, College, degree, major_minor]);
 
   // --- Conditional Wrapper Logic ---
-  const ContainerComponent = hasImage ? ImageBackground : View;
+  const ContainerComponent = ImageBackground;
   
   // Refactored container props for single style object handling
   const containerProps = hasImage 
     ? { 
         source: imageSource, 
-        resizeMode: "cover",
-        testID: `profile-card-image-${id || 'unknown'}` 
+        resizeMode: fallback ? "contain" : "cover",
+        testID: `profile-card-image-${id || 'unknown'}`
       } 
     : { 
         style: [styles.image, styles.fallbackImage, { width: SCREEN_WIDTH }],
