@@ -39,7 +39,7 @@
     "production": {
       "android": {
         "serviceAccountKeyPath": "./credentials/medalliance-1-d69386c7b194.json",
-        "track":"internal"
+        "track":"beta"
       }
     },
     "preview": {}

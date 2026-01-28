@@ -7,8 +7,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Link } from '../../utils/Linking/LinkHelpers';
 
 // --- Configuration / Constants ---
-const PRIVACY_POLICY_URL = 'https://cloudpc7.github.io/MedJourneyPrivacyPolicy/';
-const TERMS_AND_CONDITIONS_URL = 'https://cloudpc7.github.io/MedJourneyTerms/';
+const PRIVACY_POLICY_URL = 'https://github.com/cloudpc7/MedAlliancePrivacyPolicy';
+const TERMS_AND_CONDITIONS_URL = 'https://github.com/cloudpc7/medallianceterms';
 
 /**
  * LinkComponent
